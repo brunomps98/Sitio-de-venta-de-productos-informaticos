@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Noticias</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <a href="../index.html"><img src="../assets/img/logo1.png" alt="Logo de la tienda" width="200"
+                    height="120"></a>
+            <h1>BS HARDWARE</h1>
+            <p>Más de 10 años en el rubro</p>
+        </section>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos </a></li>
+                <li><a href="acerca-de.html">Acerca de</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section>
+            <h2>Noticias</h2>
+
+            <form class="filter-form">
+                <label for="filter-options">Filtrar por</label>
+
+                <select name="opciones" id="filter-options">
+                    <option value="hardware">Hardware</option>
+                    <option value="software">Software</option>
+                    <option value="ia">Inteligencia Artificial</option>
+                    <option value="companias">Compañias</option>
+                    <option value="Juegos">Juegos</option>
+                </select>
+                <button type="button" title="button-filter" id="button-news">Filtrar</button>
+
+            </form>
+
+        </section>
+
+        <article>
+            <img src="../assets/img/noticia-principal.jpg" alt="Imagen de noticia principal">
+
+            <header class="noticia-relevante">
+                <p>
+                    <a class="categoria" href="noticias-hardware.html" rel="tag">Hardware</a>
+                </p>
+                <h3>
+                    <a href="noticia-hardware.html">La fusión de Intel y AMD con Lisa Su como gran jefa: la CEO de AMD
+                        se pronuncia</a>
+                </h3>
+                <address class="autor-noticia">Por Claudio Silvera</address>
+                <time datetime="2015-01-25T13:15">25 de enero de 2015, 13:15</time>
+            </header>
+            <div class="resumen-noticiarelevante">
+                <p>Lisa Su, CEO de AMD, elegida CEO del Año por la revista Time, habla sobre la posible fusión de Intel
+                    y
+                    AMD, que se ha rumoreado con fuerza en las últimas semanas. También sobre la inteligencia
+                    artificial.
+                </p>
+                <a class="ver-mas" href="noticias-software.html">Ver más</a>
+            </div>
+
+
+        </article>
+
+        <section class="mas-noticias">
+            <article>
+                <img src="../assets/img/noticia-software.jpg" alt="Ilustración sobre software en Argentina" width="250"
+                    height="150">
+                <p>
+                    <a class="categoria" href="noticias-software.html" rel="tag">Software</a>
+                </p>
+                <h3>
+                    <a href="noticia-software.html">Sin cepo: así se reconfigura el mercado del software en
+                        Argentina</a>
+                </h3>
+                <address class="autor-noticia">Por Martin Gonzalez</address>
+                <time datetime="2015-01-30T15:15">30 de enero de 2015, 15:15</time>
+                <a class="ver-mas" href="noticias-software.html">Ver más</a>
+            </article>
+
+            <article>
+                <img src="../assets/img/noticia-ia.jpg" alt="Ilustración sobre Ia" width="250" height="150">
+                <p>
+                    <a class="categoria" href="noticias-ia.html" rel="tag">Inteligencia Artificial</a>
+                </p>
+                <h3>
+                    <a href="noticia-ia.html">Geopolítica e IA: el poder superior de la inteligencia</a>
+                </h3>
+                <address class="autor-noticia">Por Juan Perez</address>
+                <time datetime="2015-02-15T20:30">15 de febrero de 2015, 20:30</time>
+                <a class="ver-mas" href="noticias-ia.html">Ver más</a>
+
+            </article>
+
+            <article>
+                <img src="../assets/img/noticias-compañias.jpg" alt="Ilustración sobre Microsoft" width="250"
+                    height="150">
+                <p>
+                    <a class="categoria" href="noticias-companias.html" rel="tag">Compañias</a>
+                </p>
+                <h3>
+                    <a href="noticia-companias.html">Las 5 empresas de tecnología más valiosas en 2015, según Brand
+                        Finance</a>
+                </h3>
+                <address class="autor-noticia">Por Enzo Rodriguez</address>
+                <time datetime="2015-02-18T21:30">18 de febrero de 2015, 21:30</time>
+                <a class="ver-mas" href="noticias-companias.html">Ver más</a>
+
+            </article>
+
+            <article>
+                <img src="../assets/img/noticias-hardware2.jpg" alt="Ilustración sobre hardware Intel" width="250"
+                    height="150">
+                <p>
+                    <a class="categoria" href="noticias-hardware.html" rel="tag">Hardware</a>
+                </p>
+                <h3>
+                    <a href="noticia-companias.html">Battlefield 6 saldrá optimizado desde el lanzamiento para el
+                        hardware de intel</a>
+                </h3>
+                <address class="autor-noticia">Por Julian Caminos</address>
+                <time datetime="2015-02-14T10:30">14 de febrero de 2015, 10:30</time>
+                <a class="ver-mas" href="noticias-hardware.html">Ver más</a>
+
+
+            </article>
+        </section>
+
+        <section class="texto-noticias" aria-labelledby="intro-title">
+            <h2 id="intro-title" class="sr-only">Introducción</h2>
+            <p>Aquí tienes toda la actualidad de Hardware que te interesa. Ponte al día de las últimas
+                novedades sobre microprocesadores, tarjetas gráficas, equipos de sobremesa y portátiles.</p>
+        </section>
+
+        <section>
+            <article>
+                <img src="../assets/img/noticia-juegos.jpg" alt="Ilustración sobre Hollow Knight Silksong" width="500"
+                    height="300">
+                <p>
+                    <a class="categoria" href="noticias-juegos.html" rel="tag">Juegos</a>
+                </p>
+                <h3>
+                    <a href="noticia-juegos.html">¿A qué hora se podrá jugar Hollow Knight: Silksong? Una nueva
+                        actualización del juego por Team Cherry en SteamDB despeja las dudas, de momento.</a>
+                </h3>
+                <address class="autor-noticia">Por Bruno Silvera</address>
+                <time datetime="2015-02-28T10:30">29 de febrero de 2015, 10:30</time>
+                <p>
+                    ¿A qué hora se podrá jugar Hollow Knight: Silksong? Una nueva actualización del juego por Team
+                    Cherry en SteamDB despeja las dudas, de momento.
+                </p>
+
+            </article>
+
+            <article>
+                <img src="../assets/img/noticia-juegos2.jpg" alt="Ilustración sobre Hollow Knight Silksong" width="500"
+                    height="300">
+                <p>
+                    <a class="categoria" href="noticias-juegos.html" rel="tag">Juegos</a>
+                </p>
+                <h3>
+                    <a href="noticia-juegos.html">Steam tiene 4 nuevos juegos totalmente gratis que ya puedes descargar
+                        ahora mismo</a>
+                </h3>
+                <address class="autor-noticia">Por Bruno Silvera</address>
+                <time datetime="2015-02-28T10:30">29 de febrero de 2015, 10:30</time>
+                <p>
+                    Si quieres disfrutar de cuatro nuevos juegos gratis, ahora Steam te ofrece la oportunidad gracias a
+                    estas nuevas entregas
+                </p>
+            </article>
+        </section>
+
+
+
+
+
+    </main>
+
+    <footer>
+
+        <p>© 2025 Todos los derechos reservados.</p>
+        <p>Desarrollado por Bruno.</p>
+
+        <div>
+            <h3 class="redes-sociales">Redes Sociales</h3>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Síguenos en Facebook">
+                        <img src="../assets/img/facebook.jpg" alt="Logo de Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Síguenos en Instagram">
+                        <img src="../assets/img/instagram.jpg" alt="Logo de Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Contáctanos por WhatsApp">
+                        <img src="../assets/img/whatsapp.jpg" alt="Logo de WhatsApp">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Conecta con nosotros en LinkedIn">
+                        <img src="../assets/img/linkedin.jpg" alt="Logo de LinkedIn">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+/* Fuentes importadas de Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap');
+
+/* Reset de CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos */
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+header,
+footer {
+  background-color: #FFF159;
+  color: #333333;
+}
+
+nav ul li a {
+  color: #3483FA;
+}
+
+
+
+.nombre-producto {
+  color: #1b1b1b;
+  font-family: 'Asimovian', sans-serif;
+}
+
+.precio-producto {
+  color: rgb(0, 0, 0);
+  font-family: "PT Serif", serif;
+
+}
+
+#productos-destacados {
+  color: #333333;
+  font-family: 'Roboto', sans-serif;
+}
+
+.noticia-relevante {
+  background-color: transparent;
+  color: black
+}
+
+main {
+  background-color: #dbdbdb;
+}
+
+.categoria {
+  color: #b60000;
+}
+
+.redes-sociales {
+  color: #000000;
+}
+
+.ver-mas {
+  color: #002d70;
+}
