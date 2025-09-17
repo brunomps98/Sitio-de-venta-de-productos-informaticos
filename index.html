@@ -14,83 +14,95 @@
 
     <header>
         <!-- Header con Logo,nombre de la tienda y barra de navegación -->
-        <section>
-            <a href="index.html"><img src="assets/img/logo1.png" alt="Logo de la tienda" width="200" height="120"></a>
-            <h1>BS HARDWARE</h1>
-            <p>Más de 10 años en el rubro</p>
+        <section class="encabezado">
+            <img class="imagen-encabezado" src="assets/img/logo1.png" alt="Logo de la tienda" width="200" height="120">
+            <div class="texto-encabezado">
+                <h1 class="h1-encabezado">BS HARDWARE</h1>
+                <p class="parrafo-encabezado">Más de 10 años en el rubro</p>
+            </div>
         </section>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/productos.html">Productos </a></li>
-                <li><a href="pages/acerca-de.html">Acerca de</a></li>
-                <li><a href="pages/noticias.html">Noticias</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="menu-principal">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="./pages/productos.html">Productos </a></li>
+                    <li><a href="./pages/acerca-de.html">Acerca de</a></li>
+                    <li><a href="./pages/noticias.html">Noticias</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
 
     </header>
     <main>
 
         <!-- Banner de la tienda-->
 
-        <section>
-            <img id="banner-index" src="assets/img/banner.jpg" alt="Banner de la tienda">
+        <section class="banner-index">
+            <img class="img-index" src="assets/img/banner.jpg" alt="Banner de la tienda">
         </section>
 
         <section>
             <!-- Productos destacados de la tienda, cada uno en su article -->
 
-            <h2 id="productos-destacados">Productos Destacados</h2>
-            <article class="productos-index">
-                <img src="assets/img/procesador.jpg" alt="Imagen de Procesador AMD Ryzen 3200g">
-                <h3 class="nombre-producto">Procesador AMD Ryzen 3200g</h3>
-                <p class="precio-producto">$100000</p>
-                <button>Comprar</button>
-            </article>
-            <article class="productos-index">
-                <img src="assets/img/motherboard.jpg" alt="Imagen de Motherboard Asrock B550">
-                <h3 class="nombre-producto">Motherboard Asrock B550</h3>
-                <p class="precio-producto">$170000</p>
-                <button>Comprar</button>
-            </article>
-            <article class="productos-index">
-                <img src="assets/img/memoria.jpg" alt="Imagen de Memoria RAM 16GB DDR4">
-                <h3 class="nombre-producto">Memoria Patriot Viper DDR4 16GB 3200MHz </h3>
-                <p class="precio-producto">$50000</p>
-                <button>Comprar</button>
-            </article>
-            <article class="productos-index">
-                <img src="assets/img/grafica.jpg" alt="Imagen de Placa de Video Asrock RX 6650xt">
-                <h3 class="nombre-producto">Placa de Video Asrock RX 6650xt</h3>
-                <p class="precio-producto">$350000</p>
-                <button>Comprar</button>
-            </article>
-            <article class="productos-index">
-                <img src="assets/img/fuente.jpg" alt="Imagen de Fuente Thermaltake Smart BX1 650W RGB 80 Plus Bronze">
-                <h3 class="nombre-producto">Fuente Thermaltake Smart BX1 650W RGB 80 Plus Bronze</h3>
-                <p class="precio-producto">$115000</p>
-                <button>Comprar</button>
-            </article>
-            <article class="productos-index">
-                <img src="assets/img/gabinete.jpg" alt="Imagen de Gabinete Corsair ICUE 7000X RGB">
-                <h3 class="nombre-producto">Gabinete Corsair ICUE 7000X RGB</h3>
-                <p class="precio-producto">$500000</p>
-                <button>Comprar</button>
-            </article>
+            <h2 class="titulo-productos-destacados">Productos Destacados</h2>
+            <div class="productos-index-container">
+                <article class="productos-index">
+                    <img class="img-index" src="assets/img/procesador.jpg" alt="Imagen de Procesador AMD Ryzen 3200g">
+                    <h3 class="nombre-producto">Procesador Ryzen 3200g</h3>
+                    <p class="precio-producto">$100000</p>
+                    <button>Comprar</button>
+                </article>
+                <article class="productos-index">
+                    <img class="img-index" src="assets/img/motherboard.jpg" alt="Imagen de Motherboard Asrock B550">
+                    <h3 class="nombre-producto">Motherboard Asrock B550</h3>
+                    <p class="precio-producto">$170000</p>
+                    <button>Comprar</button>
+                </article>
+                <article class="productos-index">
+                    <img class="img-index" src="assets/img/memoria.jpg" alt="Imagen de Memoria RAM 16GB DDR4">
+                    <h3 class="nombre-producto">Memoria Ram 16GB</h3>
+                    <p class="precio-producto">$50000</p>
+                    <button>Comprar</button>
+                </article>
+
+                <article class="productos-index">
+                    <img class="img-index" src="assets/img/grafica.jpg" alt="Imagen de Placa de Video Asrock RX 6650xt">
+                    <h3 class="nombre-producto">Tarjeta Gráfica RX6650</h3>
+                    <p class="precio-producto">$350000</p>
+                    <button>Comprar</button>
+                </article>
+                <article class="productos-index">
+                    <img class="img-index" src="assets/img/fuente.jpg"
+                        alt="Imagen de Fuente Thermaltake Smart BX1 650W RGB 80 Plus Bronze">
+                    <h3 class="nombre-producto">Fuente Thermaltake 650W</h3>
+                    <p class="precio-producto">$115000</p>
+                    <button>Comprar</button>
+                </article>
+                <article class="productos-index">
+                    <img class="img-index" src="assets/img/gabinete.jpg"
+                        alt="Imagen de Gabinete Corsair ICUE 7000X RGB">
+                    <h3 class="nombre-producto">Gabinete Corsair 7000X</h3>
+                    <p class="precio-producto">$500000</p>
+                    <button>Comprar</button>
+                </article>
+
+            </div>
+
         </section>
     </main>
 
     <!-- Footer de la pagina-->
 
     <footer>
+        <section class="info-footer">
+            <p>© 2025 Todos los derechos reservados.</p>
+            <p>Desarrollado por Bruno.</p>
+        </section>
 
-        <p>© 2025 Todos los derechos reservados.</p>
-        <p>Desarrollado por Bruno.</p>
-
-        <div>
-            <h3 class="redes-sociales">Redes Sociales</h3>
+        <div class="redes-sociales">
+            <h3>Redes Sociales</h3>
             <ul>
                 <li>
                     <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
