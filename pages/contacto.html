@@ -4,175 +4,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
     <title>Contacto</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <section>
-            <a href="../index.html"><img src="../assets/img/logo1.png" alt="Logo de la tienda" width="200"
-                    height="120"></a>
-            <h1>BS HARDWARE</h1>
-            <p>Más de 10 años en el rubro</p>
-        </section>
-
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos </a></li>
-                <li><a href="./acerca-de.html">Acerca de</a></li>
-                <li><a href="./noticias.html">Noticias</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-
-    </header>
-
-    <main>
 
 
-        <div class="contact-container">
-
-            <!-- Seccion izquierda de la pagina, con un formulario de contacto -->
-
-            <section class="form-contact">
-                <h2>Envianos tu consulta</h2>
-                <p>¿Tienes dudas sobre algún producto, cotizaciones o soporte técnico? Completa el formulario y un
-                    miembro del equipo de BS Hardware se pondrá en contacto contigo lo antes posible.</p>
-
-                <form action="/enviar-consulta" method="POST">
-
-                    <div class="form-grupo">
-                        <label for="nombre">Nombre:</label>
-                                <input type="text" id="nombre" name="nombre" required>
-                    </div>
-                    <div class="form-grupo">
-                        <label for="surname">Apellido:</label>
-                                <input type="text" id="Apellido" name="Apellido" required>
-                    </div>
-                    <div class="form-grupo">
-                        <label for="email">Correo Electronico:</label>
-                                <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-grupo">
-                        <label for="telefono">Telefono:</label>
-                                <input type="tel" id="telefono" name="telefono" required>
-                    </div>
-                    <div class="form-grupo">
-                        <label for="pais">Pais:</label>
-                                <input type="text" id="pais" name="pais" required>
-                    </div>
-                    <div class="form-grupo">
-                        <label for="provincia">Provincia/Estado:</label>
-                                <input type="text" id="provincia" name="provincia" required>
-                    </div>
-                    <div class="form-grupo">
-                        <label for="direccion">Direccion:<label>
-                                <input type="text" id="direccion" name="direccion" required>
-                    </div>
-                    <div class="form-grupo">
-                        <label for="mensaje">Mensaje:</label><br>
-                        <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
-                    </div>
-                    <div class="form-group captcha-group">
-                        <input type="checkbox" id="captcha" name="captcha" required>
-                        <label for="captcha">No soy un robot</label>
-                    </div>
-
-                    <button type="submit">Enviar</button>
-
-                </form>
-
-
-            </section>
-
-
-            <!-- Sección derecha de la tienda, con información de contacto -->
-
-            <section class="info-contact">
-                <h2>Contactanos</h2>
-                <p>Te dejamos nuestros medios de comunicación para que puedas contactarnos ante tu duda.</p>
-
-                <ul class="contacts-methods">
-                    <li>
-                        <a href="https://web.whatsapp.com/" target="_blank">
-                            <img src="../assets/img/whatsapp.jpg" alt="Whatsapp" width="20" height="20"> Whatsapp
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tel:+4354805">
-                            <img src="../assets/img/phone.png" alt="Teléfono" width="20" height="20"> Teléfono Fijo
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:bshardware123@gmail.com">
-                            <img src="../assets/img/email.png" alt="Email" width="20" height="20"> Email
-                        </a>
-                    </li>
-                    <li>
-                        <img src="../assets/img/map.png" alt="Dirección" width="20" height="20">
-                        <address>
-                            Calle Falsa 123<br>
-                            Paraná, Entre Ríos<br>
-                            Argentina
-                        </address>
-                    </li>
-                </ul>
-            </section>
-
-            <article class="mapa">
-                <h3>Ubicación en Maps</h3>
-                <div class="map-placeholder">
+    <body>
+        <header class="custom-header">
+            <section class="custom-encabezado">
+                <img class="custom-imagen-encabezado" src="../assets/img/logo1.webp" alt="Logo de la tienda" width="200"
+                    height="120">
+                <div class="custom-texto-encabezado">
+                    <h1 class="custom-h1-encabezado">BS HARDWARE</h1>
+                    <p class="custom-parrafo-encabezado">Más de 10 años en el rubro</p>
                 </div>
-            </article>
-
-
             </section>
+            <nav class="navbar navbar-expand-lg" style="background-color:#FFF159;">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-primary fw-semibold" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary fw-semibold" href="./productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary fw-semibold" href="./acerca-de.html">Acerca de</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary fw-semibold" href="./noticias.html">Noticias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary fw-semibold" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-        </div>
+        <main class="custom-main py-5">
+            <div class="container">
+                <div class="row">
 
+                    <div class="col-lg-7 mb-5 mb-lg-0">
+                        <section class="form-contact">
+                            <h2>Envíanos tu consulta</h2>
+                            <p>¿Tienes dudas sobre algún producto, cotizaciones o soporte técnico? Completa el
+                                formulario y un
+                                miembro del equipo de BS Hardware se pondrá en contacto contigo lo antes posible.
+                            </p>
 
+                            <form action="#" method="POST">
+                                <div class="form-group">
+                                    <label for="nombre">Nombre:</label>
+                                    <input type="text" id="nombre" name="nombre" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="apellido">Apellido:</label>
+                                    <input type="text" id="apellido" name="apellido" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Correo Electrónico:</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefono">Teléfono:</label>
+                                    <input type="tel" id="telefono" name="telefono">
+                                </div>
+                                <div class="form-group">
+                                    <label for="mensaje">Mensaje:</label>
+                                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                                </div>
+                                <div class="form-group captcha-group">
+                                    <input type="checkbox" id="captcha" name="captcha" required>
+                                    <label for="captcha">No soy un robot</label>
+                                </div>
+                                <button type="submit" class="submit-btn">Enviar</button>
+                            </form>
+                        </section>
+                    </div>
 
-    </main>
+                    <div class="col-lg-5">
+                        <section class="info-contact mb-4">
+                            <h2>Contáctanos</h2>
+                            <p>Te dejamos nuestros medios de comunicación para que puedas contactarnos ante tu duda.
+                            </p>
+                            <ul class="contact-methods">
+                                <li>
+                                    <a href="https://web.whatsapp.com/" target="_blank">
+                                        <img src="../assets/img/whatsapp.webp" alt="Whatsapp Icon"> Whatsapp
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+543434XXXXXX">
+                                        <img src="../assets/img/phone.webp" alt="Phone Icon"> Teléfono Fijo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:bshardware123@gmail.com">
+                                        <img src="../assets/img/email.webp" alt="Email Icon"> Email
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="address-group">
+                                        <img src="../assets/img/map.webp" alt="Address Icon">
+                                        <address>
+                                            Calle Falsa 123<br>
+                                            Paraná, Entre Ríos<br>
+                                            Argentina
+                                        </address>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
 
-    <footer>
+                        <article class="mapa">
+                            <h3>Ubicación en Maps</h3>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54247.90129993381!2d-60.54895525136718!3d-31.74709400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b4527d673ff3a3%3A0x16b06385b216f5c8!2sPlaza%201%C2%BA%20de%20Mayo!5e0!3m2!1ses-419!2sar!4v1727712345678!5m2!1ses-419!2sar"
+                                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </article>
+                    </div>
 
-        <p>© 2025 Todos los derechos reservados.</p>
-        <p>Desarrollado por Bruno.</p>
+                </div>
+            </div>
+        </main>
+        <footer class="custom-footer">
+            <div class="container py-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <p class="mb-1">© 2025 Todos los derechos reservados.</p>
+                        <p class="mb-0">Desarrollado por Bruno.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <h5 class="mb-3">Redes Sociales</h5>
+                        <ul class="list-inline m-0">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Facebook">
+                                    <img src="../assets/img/facebook.webp" alt="Logo de Facebook" width="32" height="32">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Instagram">
+                                    <img src="../assets/img/instagram.webp" alt="Logo de Instagram" width="32"
+                                        height="32">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"
+                                    aria-label="WhatsApp">
+                                    <img src="../assets/img/whatsapp.webp" alt="Logo de WhatsApp" width="32" height="32">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                                    aria-label="LinkedIn">
+                                    <img src="../assets/img/linkedin.webp" alt="Logo de LinkedIn" width="32" height="32">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-        <div>
-            <h3 class="redes-sociales">Redes Sociales</h3>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Síguenos en Facebook">
-                        <img src="../assets/img/facebook.jpg" alt="Logo de Facebook">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Síguenos en Instagram">
-                        <img src="../assets/img/instagram.jpg" alt="Logo de Instagram">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Contáctanos por WhatsApp">
-                        <img src="../assets/img/whatsapp.jpg" alt="Logo de WhatsApp">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Conecta con nosotros en LinkedIn">
-                        <img src="../assets/img/linkedin.jpg" alt="Logo de LinkedIn">
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-    </footer>
-
-</body>
+    </body>
 
 </html>

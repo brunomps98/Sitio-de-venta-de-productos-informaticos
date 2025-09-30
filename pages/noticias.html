@@ -4,228 +4,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
     <title>Noticias</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <section>
-            <a href="../index.html"><img src="../assets/img/logo1.png" alt="Logo de la tienda" width="200"
-                    height="120"></a>
-            <h1>BS HARDWARE</h1>
-            <p>Más de 10 años en el rubro</p>
-        </section>
-
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos </a></li>
-                <li><a href="./acerca-de.html">Acerca de</a></li>
-                <li><a href="./noticias.html">Noticias</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-
+        <header class="custom-header">
+            <section class="custom-encabezado">
+                <img class="custom-imagen-encabezado" src="../assets/img/logo1.webp" alt="Logo de la tienda" width="200"
+                    height="120">
+                <div class="custom-texto-encabezado">
+                    <h1 class="custom-h1-encabezado">BS HARDWARE</h1>
+                    <p class="custom-parrafo-encabezado">Más de 10 años en el rubro</p>
+                </div>
+            </section>
+            <nav class="navbar navbar-expand-lg" style="background-color:#FFF159;">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-primary fw-semibold" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary fw-semibold" href="./productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary fw-semibold" href="./acerca-de.html">Acerca de</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary fw-semibold" href="./noticias.html">Noticias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary fw-semibold" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
     </header>
 
-    <main>
-        <section>
-            <h2>Noticias</h2>
+    <main class="custom-main py-5">
+        <div class="container">
 
-            <form class="filter-form">
-                <label for="filter-options">Filtrar por</label>
+            <section class="row mb-4">
+                <div class="col-md-6 text-center text-md-start">
+                    <h2 class="news-main-title">Noticias</h2>
+                </div>
+                <div class="col-md-6">
+                    <form class="filter-form">
+                        <label for="filter-options">Filtrar por</label>
+                        <select name="opciones" id="filter-options">
+                            <option value="hardware">Hardware</option>
+                            <option value="software">Software</option>
+                            <option value="ia">Inteligencia Artificial</option>
+                            <option value="companias">Compañias</option>
+                            <option value="Juegos">Juegos</option>
+                        </select>
+                        <button type="button">Filtrar</button>
+                    </form>
+                </div>
+            </section>
 
-                <select name="opciones" id="filter-options">
-                    <option value="hardware">Hardware</option>
-                    <option value="software">Software</option>
-                    <option value="ia">Inteligencia Artificial</option>
-                    <option value="companias">Compañias</option>
-                    <option value="Juegos">Juegos</option>
-                </select>
-                <button type="button" title="button-filter" id="button-news">Filtrar</button>
+            <section class="row mb-5">
+                <div class="col-12">
+                    <article class="news-card featured-news">
+                        <div class="row g-0">
+                            <div class="col-lg-6">
+                                <img src="../assets/img/noticia-principal.webp" alt="Imagen de noticia principal"
+                                    class="img-fluid news-img">
+                            </div>
+                            <div class="col-lg-6 d-flex flex-column">
+                                <div class="news-card-body">
+                                    <p class="news-category">Hardware</p>
+                                    <h3 class="news-title"><a href="#">La fusión de Intel y AMD con Lisa Su como gran
+                                            jefa</a></h3>
+                                    <p class="news-meta">Por Claudio Silvera | <time datetime="2025-01-25">25 de enero
+                                            de 2025</time></p>
+                                    <p class="news-excerpt">Lisa Su, CEO de AMD, elegida CEO del Año por la revista
+                                        Time, habla sobre la posible fusión de Intel y AMD, que se ha rumoreado con
+                                        fuerza en las últimas semanas...</p>
+                                </div>
+                                <div class="mt-auto news-card-footer">
+                                    <a href="#" class="read-more">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-            </form>
+            <section class="row mb-5">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <article class="news-card h-100">
+                        <img src="../assets/img/noticia-software.webp" alt="Ilustración sobre software en Argentina"
+                            class="img-fluid news-img">
+                        <div class="news-card-body">
+                            <p class="news-category">Software</p>
+                            <h3 class="news-title-small"><a href="#">Sin cepo: así se reconfigura el mercado del
+                                    software en Argentina</a></h3>
+                            <p class="news-meta">Por Martin Gonzalez | <time datetime="2025-01-30">30 de enero de
+                                    2025</time></p>
+                        </div>
+                        <div class="news-card-footer">
+                            <a href="#" class="read-more">Ver más</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <article class="news-card h-100">
+                        <img src="../assets/img/noticia-ia.webp" alt="Ilustración sobre Ia" class="img-fluid news-img">
+                        <div class="news-card-body">
+                            <p class="news-category">Inteligencia Artificial</p>
+                            <h3 class="news-title-small"><a href="#">Geopolítica e IA: el poder superior de la
+                                    inteligencia</a></h3>
+                            <p class="news-meta">Por Juan Perez | <time datetime="2025-02-15">15 de febrero de
+                                    2025</time></p>
+                        </div>
+                        <div class="news-card-footer">
+                            <a href="#" class="read-more">Ver más</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <article class="news-card h-100">
+                        <img src="../assets/img/noticias-compañias.webp" alt="Ilustración sobre Microsoft"
+                            class="img-fluid news-img">
+                        <div class="news-card-body">
+                            <p class="news-category">Compañias</p>
+                            <h3 class="news-title-small"><a href="#">Las 5 empresas de tecnología más valiosas en
+                                    2025</a></h3>
+                            <p class="news-meta">Por Enzo Rodriguez | <time datetime="2025-02-18">18 de febrero de
+                                    2025</time></p>
+                        </div>
+                        <div class="news-card-footer">
+                            <a href="#" class="read-more">Ver más</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <article class="news-card h-100">
+                        <img src="../assets/img/noticias-hardware2.webp" alt="Ilustración sobre hardware Intel"
+                            class="img-fluid news-img">
+                        <div class="news-card-body">
+                            <p class="news-category">Hardware</p>
+                            <h3 class="news-title-small"><a href="#">Battlefield saldrá optimizado para el hardware de
+                                    intel</a></h3>
+                            <p class="news-meta">Por Julian Caminos | <time datetime="2025-02-14">14 de febrero de
+                                    2025</time></p>
+                        </div>
+                        <div class="news-card-footer">
+                            <a href="#" class="read-more">Ver más</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-        </section>
+            <section class="row mb-5">
+                <div class="col-12 text-center">
+                    <p class="lead">Aquí tienes toda la actualidad de Hardware que te interesa. Ponte al día de las
+                        últimas novedades sobre microprocesadores, tarjetas gráficas, equipos de sobremesa y portátiles.
+                    </p>
+                </div>
+            </section>
 
-        <article>
-            <img src="../assets/img/noticia-principal.jpg" alt="Imagen de noticia principal">
-
-            <header class="noticia-relevante">
-                <p>
-                    <a class="categoria" href="noticias-hardware.html" rel="tag">Hardware</a>
-                </p>
-                <h3>
-                    <a href="noticia-hardware.html">La fusión de Intel y AMD con Lisa Su como gran jefa: la CEO de AMD
-                        se pronuncia</a>
-                </h3>
-                <address class="autor-noticia">Por Claudio Silvera</address>
-                <time datetime="2015-01-25T13:15">25 de enero de 2015, 13:15</time>
-            </header>
-            <div class="resumen-noticiarelevante">
-                <p>Lisa Su, CEO de AMD, elegida CEO del Año por la revista Time, habla sobre la posible fusión de Intel
-                    y
-                    AMD, que se ha rumoreado con fuerza en las últimas semanas. También sobre la inteligencia
-                    artificial.
-                </p>
-                <a class="ver-mas" href="noticias-software.html">Ver más</a>
-            </div>
-
-
-        </article>
-
-        <section class="mas-noticias">
-            <article>
-                <img src="../assets/img/noticia-software.jpg" alt="Ilustración sobre software en Argentina" width="250"
-                    height="150">
-                <p>
-                    <a class="categoria" href="noticias-software.html" rel="tag">Software</a>
-                </p>
-                <h3>
-                    <a href="noticia-software.html">Sin cepo: así se reconfigura el mercado del software en
-                        Argentina</a>
-                </h3>
-                <address class="autor-noticia">Por Martin Gonzalez</address>
-                <time datetime="2015-01-30T15:15">30 de enero de 2015, 15:15</time>
-                <a class="ver-mas" href="noticias-software.html">Ver más</a>
-            </article>
-
-            <article>
-                <img src="../assets/img/noticia-ia.jpg" alt="Ilustración sobre Ia" width="250" height="150">
-                <p>
-                    <a class="categoria" href="noticias-ia.html" rel="tag">Inteligencia Artificial</a>
-                </p>
-                <h3>
-                    <a href="noticia-ia.html">Geopolítica e IA: el poder superior de la inteligencia</a>
-                </h3>
-                <address class="autor-noticia">Por Juan Perez</address>
-                <time datetime="2015-02-15T20:30">15 de febrero de 2015, 20:30</time>
-                <a class="ver-mas" href="noticias-ia.html">Ver más</a>
-
-            </article>
-
-            <article>
-                <img src="../assets/img/noticias-compañias.jpg" alt="Ilustración sobre Microsoft" width="250"
-                    height="150">
-                <p>
-                    <a class="categoria" href="noticias-companias.html" rel="tag">Compañias</a>
-                </p>
-                <h3>
-                    <a href="noticia-companias.html">Las 5 empresas de tecnología más valiosas en 2015, según Brand
-                        Finance</a>
-                </h3>
-                <address class="autor-noticia">Por Enzo Rodriguez</address>
-                <time datetime="2015-02-18T21:30">18 de febrero de 2015, 21:30</time>
-                <a class="ver-mas" href="noticias-companias.html">Ver más</a>
-
-            </article>
-
-            <article>
-                <img src="../assets/img/noticias-hardware2.jpg" alt="Ilustración sobre hardware Intel" width="250"
-                    height="150">
-                <p>
-                    <a class="categoria" href="noticias-hardware.html" rel="tag">Hardware</a>
-                </p>
-                <h3>
-                    <a href="noticia-companias.html">Battlefield 6 saldrá optimizado desde el lanzamiento para el
-                        hardware de intel</a>
-                </h3>
-                <address class="autor-noticia">Por Julian Caminos</address>
-                <time datetime="2015-02-14T10:30">14 de febrero de 2015, 10:30</time>
-                <a class="ver-mas" href="noticias-hardware.html">Ver más</a>
-
-
-            </article>
-        </section>
-
-        <section class="texto-noticias" aria-labelledby="intro-title">
-            <h2 class="intro-title" class="sr-only">Introducción</h2>
-            <p>Aquí tienes toda la actualidad de Hardware que te interesa. Ponte al día de las últimas
-                novedades sobre microprocesadores, tarjetas gráficas, equipos de sobremesa y portátiles.</p>
-        </section>
-
-        <section>
-            <article>
-                <img src="../assets/img/noticia-juegos.jpg" alt="Ilustración sobre Hollow Knight Silksong" width="500"
-                    height="300">
-                <p>
-                    <a class="categoria" href="noticias-juegos.html" rel="tag">Juegos</a>
-                </p>
-                <h3>
-                    <a href="noticia-juegos.html">¿A qué hora se podrá jugar Hollow Knight: Silksong? Una nueva
-                        actualización del juego por Team Cherry en SteamDB despeja las dudas, de momento.</a>
-                </h3>
-                <address class="autor-noticia">Por Bruno Silvera</address>
-                <time datetime="2015-02-28T10:30">29 de febrero de 2015, 10:30</time>
-                <p>
-                    ¿A qué hora se podrá jugar Hollow Knight: Silksong? Una nueva actualización del juego por Team
-                    Cherry en SteamDB despeja las dudas, de momento.
-                </p>
-
-            </article>
-
-            <article>
-                <img src="../assets/img/noticia-juegos2.jpg" alt="Ilustración sobre Hollow Knight Silksong" width="500"
-                    height="300">
-                <p>
-                    <a class="categoria" href="noticias-juegos.html" rel="tag">Juegos</a>
-                </p>
-                <h3>
-                    <a href="noticia-juegos.html">Steam tiene 4 nuevos juegos totalmente gratis que ya puedes descargar
-                        ahora mismo</a>
-                </h3>
-                <address class="autor-noticia">Por Bruno Silvera</address>
-                <time datetime="2015-02-28T10:30">29 de febrero de 2015, 10:30</time>
-                <p>
-                    Si quieres disfrutar de cuatro nuevos juegos gratis, ahora Steam te ofrece la oportunidad gracias a
-                    estas nuevas entregas
-                </p>
-            </article>
-        </section>
-
-
-
-
-
-    </main>
-
-    <footer>
-
-        <p>© 2025 Todos los derechos reservados.</p>
-        <p>Desarrollado por Bruno.</p>
-
-        <div>
-            <h3 class="redes-sociales">Redes Sociales</h3>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Síguenos en Facebook">
-                        <img src="../assets/img/facebook.jpg" alt="Logo de Facebook">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Síguenos en Instagram">
-                        <img src="../assets/img/instagram.jpg" alt="Logo de Instagram">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Contáctanos por WhatsApp">
-                        <img src="../assets/img/whatsapp.jpg" alt="Logo de WhatsApp">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Conecta con nosotros en LinkedIn">
-                        <img src="../assets/img/linkedin.jpg" alt="Logo de LinkedIn">
-                    </a>
-                </li>
-            </ul>
+            <section class="row">
+                <div class="col-lg-6 mb-4">
+                    <article class="news-card h-100">
+                        <img src="../assets/img/noticia-juegos.webp" alt="Ilustración sobre Hollow Knight Silksong"
+                            class="img-fluid news-img">
+                        <div class="news-card-body">
+                            <p class="news-category">Juegos</p>
+                            <h3 class="news-title"><a href="#">¿A qué hora se podrá jugar Hollow Knight: Silksong?</a>
+                            </h3>
+                            <p class="news-meta">Por Bruno Silvera | <time datetime="2025-02-28">28 de febrero de
+                                    2025</time></p>
+                            <p class="news-excerpt">Una nueva actualización del juego por Team Cherry en SteamDB despeja
+                                las dudas, de momento.</p>
+                        </div>
+                        <div class="news-card-footer">
+                            <a href="#" class="read-more">Ver más</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <article class="news-card h-100">
+                        <img src="../assets/img/noticia-juegos2.webp" alt="Ilustración sobre juegos gratis"
+                            class="img-fluid news-img">
+                        <div class="news-card-body">
+                            <p class="news-category">Juegos</p>
+                            <h3 class="news-title"><a href="#">Steam tiene 4 nuevos juegos totalmente gratis que ya
+                                    puedes descargar</a></h3>
+                            <p class="news-meta">Por Bruno Silvera | <time datetime="2025-02-28">28 de febrero de
+                                    2025</time></p>
+                            <p class="news-excerpt">Si quieres disfrutar de cuatro nuevos juegos gratis, ahora Steam te
+                                ofrece la oportunidad gracias a estas nuevas entregas.</p>
+                        </div>
+                        <div class="news-card-footer">
+                            <a href="#" class="read-more">Ver más</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
         </div>
-
+    </main>
+    <footer class="custom-footer">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-1">© 2025 Todos los derechos reservados.</p>
+                    <p class="mb-0">Desarrollado por Bruno.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <h5 class="mb-3">Redes Sociales</h5>
+                    <ul class="list-inline m-0">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                                aria-label="Facebook">
+                                <img src="../assets/img/facebook.webp" alt="Logo de Facebook" width="32" height="32">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                                aria-label="Instagram">
+                                <img src="../assets/img/instagram.webp" alt="Logo de Instagram" width="32" height="32">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"
+                                aria-label="WhatsApp">
+                                <img src="../assets/img/whatsapp.webp" alt="Logo de WhatsApp" width="32" height="32">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                                aria-label="LinkedIn">
+                                <img src="../assets/img/linkedin.webp" alt="Logo de LinkedIn" width="32" height="32">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
