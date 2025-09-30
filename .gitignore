@@ -1,0 +1,15 @@
+# Ignora la configuración de Visual Studio Code
+.vscode/
+
+# Ignora la carpeta de dependencias de Node.js (¡MUY IMPORTANTE!)
+node_modules/
+
+# Ignora archivos de variables de entorno (contienen secretos)
+.env
+
+# Ignora carpetas de compilación o distribución
+dist/
+build/
+
+# Ignora archivos de log
+*.log
