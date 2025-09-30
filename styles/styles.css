@@ -809,3 +809,7 @@ a {
 .read-more:hover {
   text-decoration: underline;
 }
+
+.row.mb-5 .news-card .news-img {
+    height: 150px; 
+}
