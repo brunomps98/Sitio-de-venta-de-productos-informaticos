@@ -10,49 +10,46 @@
 </head>
 
 <body>
-    <header>
-        <header class="custom-header">
-            <section class="custom-encabezado">
-                <img class="custom-imagen-encabezado" src="../assets/img/logo1.webp" alt="Logo de la tienda" width="200"
-                    height="120">
-                <div class="custom-texto-encabezado">
-                    <h1 class="custom-h1-encabezado">BS HARDWARE</h1>
-                    <p class="custom-parrafo-encabezado">Más de 10 años en el rubro</p>
+    <header class="custom-header">
+        <section class="custom-encabezado">
+            <img class="custom-imagen-encabezado" src="../assets/img/logo1.webp" alt="Logo de la tienda" width="200"
+                height="120">
+            <div class="custom-texto-encabezado">
+                <h1 class="custom-h1-encabezado">BS HARDWARE</h1>
+                <p class="custom-parrafo-encabezado">Más de 10 años en el rubro</p>
+            </div>
+        </section>
+        <nav class="navbar navbar-expand-lg" style="background-color:#FFF159;">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-primary fw-semibold" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary fw-semibold" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary fw-semibold" href="./acerca-de.html">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary fw-semibold" href="./noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary fw-semibold" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-            </section>
-            <nav class="navbar navbar-expand-lg" style="background-color:#FFF159;">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link text-primary fw-semibold" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-primary fw-semibold" href="./productos.html">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-primary fw-semibold" href="./acerca-de.html">Acerca de</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-primary fw-semibold" href="./noticias.html">Noticias</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-primary fw-semibold" href="./contacto.html">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
     </header>
 
     <main class="custom-main py-5">
         <div class="container">
-
             <section class="row mb-4">
                 <div class="col-md-6 text-center text-md-start">
                     <h2 class="news-main-title">Noticias</h2>
@@ -104,7 +101,7 @@
                 <div class="col-md-6 col-lg-3 mb-4">
                     <article class="news-card h-100">
                         <img src="../assets/img/noticia-software.webp" alt="Ilustración sobre software en Argentina"
-                            class="img-fluid news-img">
+                            class="img-fluid news-img" loading="lazy">
                         <div class="news-card-body">
                             <p class="news-category">Software</p>
                             <h3 class="news-title-small"><a href="#">Sin cepo: así se reconfigura el mercado del
@@ -119,7 +116,8 @@
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4">
                     <article class="news-card h-100">
-                        <img src="../assets/img/noticia-ia.webp" alt="Ilustración sobre Ia" class="img-fluid news-img">
+                        <img src="../assets/img/noticia-ia.webp" alt="Ilustración sobre Ia" class="img-fluid news-img"
+                            loading="lazy">
                         <div class="news-card-body">
                             <p class="news-category">Inteligencia Artificial</p>
                             <h3 class="news-title-small"><a href="#">Geopolítica e IA: el poder superior de la
@@ -135,7 +133,7 @@
                 <div class="col-md-6 col-lg-3 mb-4">
                     <article class="news-card h-100">
                         <img src="../assets/img/noticias-compañias.webp" alt="Ilustración sobre Microsoft"
-                            class="img-fluid news-img">
+                            class="img-fluid news-img" loading="lazy">
                         <div class="news-card-body">
                             <p class="news-category">Compañias</p>
                             <h3 class="news-title-small"><a href="#">Las 5 empresas de tecnología más valiosas en
@@ -151,7 +149,7 @@
                 <div class="col-md-6 col-lg-3 mb-4">
                     <article class="news-card h-100">
                         <img src="../assets/img/noticias-hardware2.webp" alt="Ilustración sobre hardware Intel"
-                            class="img-fluid news-img">
+                            class="img-fluid news-img" loading="lazy">
                         <div class="news-card-body">
                             <p class="news-category">Hardware</p>
                             <h3 class="news-title-small"><a href="#">Battlefield saldrá optimizado para el hardware de
@@ -178,7 +176,7 @@
                 <div class="col-lg-6 mb-4">
                     <article class="news-card h-100">
                         <img src="../assets/img/noticia-juegos.webp" alt="Ilustración sobre Hollow Knight Silksong"
-                            class="img-fluid news-img">
+                            class="img-fluid news-img" loading="lazy">
                         <div class="news-card-body">
                             <p class="news-category">Juegos</p>
                             <h3 class="news-title"><a href="#">¿A qué hora se podrá jugar Hollow Knight: Silksong?</a>
@@ -196,7 +194,7 @@
                 <div class="col-lg-6 mb-4">
                     <article class="news-card h-100">
                         <img src="../assets/img/noticia-juegos2.webp" alt="Ilustración sobre juegos gratis"
-                            class="img-fluid news-img">
+                            class="img-fluid news-img" loading="lazy">
                         <div class="news-card-body">
                             <p class="news-category">Juegos</p>
                             <h3 class="news-title"><a href="#">Steam tiene 4 nuevos juegos totalmente gratis que ya
@@ -214,6 +212,7 @@
             </section>
         </div>
     </main>
+
     <footer class="custom-footer">
         <div class="container py-4">
             <div class="row align-items-center">
@@ -227,25 +226,29 @@
                         <li class="list-inline-item">
                             <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
                                 aria-label="Facebook">
-                                <img src="../assets/img/facebook.webp" alt="Logo de Facebook" width="32" height="32">
+                                <img src="../assets/img/facebook.webp" alt="Logo de Facebook" width="32" height="32"
+                                    loading="lazy">
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
                                 aria-label="Instagram">
-                                <img src="../assets/img/instagram.webp" alt="Logo de Instagram" width="32" height="32">
+                                <img src="../assets/img/instagram.webp" alt="Logo de Instagram" width="32" height="32"
+                                    loading="lazy">
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"
                                 aria-label="WhatsApp">
-                                <img src="../assets/img/whatsapp.webp" alt="Logo de WhatsApp" width="32" height="32">
+                                <img src="../assets/img/whatsapp.webp" alt="Logo de WhatsApp" width="32" height="32"
+                                    loading="lazy">
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
                                 aria-label="LinkedIn">
-                                <img src="../assets/img/linkedin.webp" alt="Logo de LinkedIn" width="32" height="32">
+                                <img src="../assets/img/linkedin.webp" alt="Logo de LinkedIn" width="32" height="32"
+                                    loading="lazy">
                             </a>
                         </li>
                     </ul>
@@ -253,8 +256,8 @@
             </div>
         </div>
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 
 </html>
