@@ -1,0 +1,51 @@
+.custom-header {
+  background-color: $color-secundario;
+  color: $color-texto-principal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 150px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+}
+
+.custom-encabezado {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  .custom-h1-encabezado {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  .custom-parrafo-encabezado {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+// Estilos para la barra de navegación de Bootstrap
+.navbar {
+    .nav-link {
+        font-size: 1.1rem; 
+    }
+    @media (max-width: 768px) {
+        .navbar-nav .nav-link {
+            font-size: 1.25rem;
+            padding: 0.5rem 1rem;
+        }
+    }
+}

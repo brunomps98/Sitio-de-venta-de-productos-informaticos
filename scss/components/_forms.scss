@@ -1,0 +1,57 @@
+.form-group {
+  margin-bottom: 15px;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: $color-texto-claro;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  textarea {
+      resize: vertical;
+  }
+}
+
+.search-form {
+    display: flex;
+    width: 100%;
+    input {
+        flex-grow: 1;
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px 0 0 6px;
+    }
+    button {
+        background-color: $color-terciario;
+        color: $color-blanco;
+        border: 1px solid $color-terciario;
+        padding: 8px 16px;
+        border-radius: 0 6px 6px 0;
+    }
+}
+
+.filter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    button {
+        background-color: $color-primario;
+        color: $color-blanco;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+    }
+}

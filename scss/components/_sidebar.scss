@@ -1,0 +1,40 @@
+.sidebar-widget {
+  background-color: $color-fondo-claro;
+  padding: 20px;
+  border: 1px solid $color-borde;
+  border-radius: 8px;
+
+  @media (max-width: 991px) {
+    text-align: center;
+  }
+}
+
+.widget-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li a {
+    display: block;
+    padding: 10px;
+    background-color: $color-blanco;
+    border: 1px solid $color-borde;
+    margin-bottom: -1px;
+    &:hover {
+      background-color: #e9ecef;
+    }
+  }
+}
+
+.rating-filter {
+  font-size: 1.5rem;
+  color: #ffc107;
+  cursor: pointer;
+}

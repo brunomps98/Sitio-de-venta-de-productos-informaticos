@@ -1,0 +1,43 @@
+.form-contact,
+.info-contact,
+.mapa {
+  background-color: $color-fondo-claro;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid $color-borde;
+}
+
+.captcha-group {
+  display: flex;
+  align-items: center;
+  input {
+    margin-right: 10px;
+  }
+}
+
+.contact-methods {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    margin-bottom: 20px;
+  }
+  
+  a, .address-group {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  
+  img {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+  }
+  
+  address {
+    margin: 0;
+    font-style: normal;
+    line-height: 1.5;
+  }
+}
