@@ -16,7 +16,6 @@
   }
 }
 
-// Aplicando el mixin a los botones
 .buy-button {
   @include button-base($color-terciario);
 }
@@ -28,7 +27,7 @@
 
 .custom-productos-index button {
   @include button-base($color-primario);
-  padding: 8px 16px; // Sobrescribimos el padding si es necesario
+  padding: 8px 16px; 
 }
 
 .filter-form button, .order-form button, .search-form button {
