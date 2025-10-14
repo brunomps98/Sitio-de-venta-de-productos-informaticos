@@ -27,6 +27,8 @@
     background-color: $color-blanco;
     border: 1px solid $color-borde;
     margin-bottom: -1px;
+    color: $color-primario; 
+    text-decoration: none;   
     &:hover {
       background-color: #e9ecef;
     }

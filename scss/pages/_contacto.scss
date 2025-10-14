@@ -16,27 +16,25 @@
 }
 
 .contact-methods {
-  list-style: none;
-  padding-left: 0;
 
-  li {
-    margin-bottom: 20px;
-  }
-  
-  a, .address-group {
-    display: flex;
-    align-items: center;
+  // Estilos para los enlaces de contacto (Whatsapp, Teléfono, Email)
+  a {
     font-size: 1.1rem;
+    color: $color-primario;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
-  
-  img {
-    width: 24px;
-    height: 24px;
-    margin-right: 15px;
+
+  // Estilos para la sección de la dirección
+  .address-group {
+    font-size: 1.1rem;
+    color: $color-texto-principal;
   }
-  
+
   address {
-    margin: 0;
     font-style: normal;
     line-height: 1.5;
   }

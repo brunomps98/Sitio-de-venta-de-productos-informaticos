@@ -18,15 +18,18 @@
 
 
     <body>
-        <header class="custom-header">
-            <section class="custom-encabezado">
+        <header class="d-flex flex-column flex-md-row justify-content-between align-items-center p-3"
+            style="background-color:#FFF159;">
+
+            <div class="d-flex flex-column flex-md-row align-items-center text-center text-md-start gap-3">
                 <img class="custom-imagen-encabezado" src="../assets/img/logo1.webp" alt="Logo de la tienda" width="200"
                     height="120">
-                <div class="custom-texto-encabezado">
+                <div>
                     <h1 class="custom-h1-encabezado">BS HARDWARE</h1>
-                    <p class="custom-parrafo-encabezado">Más de 10 años en el rubro</p>
+                    <p class="custom-parrafo-encabezado mb-0">Más de 10 años en el rubro</p>
                 </div>
-            </section>
+            </div>
+
             <nav class="navbar navbar-expand-lg" style="background-color:#FFF159;">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -64,10 +67,8 @@
                         <section class="form-contact">
                             <h2>Envíanos tu consulta</h2>
                             <p>¿Tienes dudas sobre algún producto, cotizaciones o soporte técnico? Completa el
-                                formulario y un
-                                miembro del equipo de BS Hardware se pondrá en contacto contigo lo antes posible.
-                            </p>
-
+                                formulario y un miembro del equipo de BS Hardware se pondrá en contacto contigo lo antes
+                                posible.</p>
                             <form action="#" method="POST">
                                 <div class="form-group">
                                     <label for="nombre">Nombre:</label>
@@ -101,34 +102,43 @@
                     <div class="col-lg-5">
                         <section class="info-contact mb-4">
                             <h2>Contáctanos</h2>
-                            <p>Te dejamos nuestros medios de comunicación para que puedas contactarnos ante tu duda.
-                            </p>
-                            <ul class="contact-methods">
+                            <p>Te dejamos nuestros medios de comunicación para que puedas contactarnos ante tu duda.</p>
+
+                            <ul class="list-unstyled d-flex flex-column gap-3">
+
                                 <li>
-                                    <a href="https://web.whatsapp.com/" target="_blank">
-                                        <img src="../assets/img/whatsapp.webp" alt="Whatsapp Icon"> Whatsapp
+                                    <a href="https://web.whatsapp.com/" target="_blank"
+                                        class="d-flex align-items-center gap-3">
+                                        <img src="../assets/img/whatsapp.webp" alt="Whatsapp Icon" width="24"
+                                            height="24"> Whatsapp
                                     </a>
                                 </li>
+
                                 <li>
-                                    <a href="tel:+543434XXXXXX">
-                                        <img src="../assets/img/phone.webp" alt="Phone Icon"> Teléfono Fijo
+                                    <a href="tel:+543434XXXXXX" class="d-flex align-items-center gap-3">
+                                        <img src="../assets/img/phone.webp" alt="Phone Icon" width="24" height="24">
+                                        Teléfono Fijo
                                     </a>
                                 </li>
+
                                 <li>
-                                    <a href="mailto:bshardware123@gmail.com">
-                                        <img src="../assets/img/email.webp" alt="Email Icon"> Email
+                                    <a href="mailto:bshardware123@gmail.com" class="d-flex align-items-center gap-3">
+                                        <img src="../assets/img/email.webp" alt="Email Icon" width="24" height="24">
+                                        Email
                                     </a>
                                 </li>
+
                                 <li>
-                                    <div class="address-group">
-                                        <img src="../assets/img/map.webp" alt="Address Icon">
-                                        <address>
+                                    <div class="d-flex align-items-start gap-3">
+                                        <img src="../assets/img/map.webp" alt="Address Icon" width="24" height="24">
+                                        <address class="mb-0">
                                             Calle Falsa 123<br>
                                             Paraná, Entre Ríos<br>
                                             Argentina
                                         </address>
                                     </div>
                                 </li>
+
                             </ul>
                         </section>
 
@@ -193,7 +203,7 @@
         <script>
             AOS.init();
         </script>
-        
+
     </body>
 
 </html>

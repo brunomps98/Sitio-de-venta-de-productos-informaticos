@@ -4,24 +4,6 @@
   object-fit: cover;
 }
 
-.custom-titulo-productos-destacados {
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.custom-productos-index-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 60px auto;
-  width: 90%;
-  max-width: 1400px;
-  gap: 40px;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
-}
 
 .custom-productos-index {
   display: flex;
