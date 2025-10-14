@@ -1,0 +1,41 @@
+.form-contact,
+.info-contact,
+.mapa {
+  background-color: $color-fondo-claro;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid $color-borde;
+}
+
+.captcha-group {
+  display: flex;
+  align-items: center;
+  input {
+    margin-right: 10px;
+  }
+}
+
+.contact-methods {
+
+  // Estilos para los enlaces de contacto (Whatsapp, Teléfono, Email)
+  a {
+    font-size: 1.1rem;
+    color: $color-primario;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  // Estilos para la sección de la dirección
+  .address-group {
+    font-size: 1.1rem;
+    color: $color-texto-principal;
+  }
+
+  address {
+    font-style: normal;
+    line-height: 1.5;
+  }
+}

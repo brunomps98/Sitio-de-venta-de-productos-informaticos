@@ -1,0 +1,37 @@
+// Mixin para un estilo de botón base
+@mixin button-base($bg-color, $text-color: $color-blanco) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-image: linear-gradient(45deg, $color-primario, $color-terciario);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.buy-button {
+  @include button-base($color-terciario);
+}
+
+.submit-btn {
+  @include button-base($color-peligro);
+  width: 100%;
+}
+
+.btn-card {
+  @include button-base($color-primario);
+  padding: 8px 16px;
+}
+
+.filter-form button, .order-form button, .search-form button {
+    cursor: pointer;
+}

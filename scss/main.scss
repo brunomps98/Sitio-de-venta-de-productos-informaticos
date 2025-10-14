@@ -1,0 +1,21 @@
+// 1. Variables
+@import 'variables';
+
+// 2. Base (reset y tipografía)
+@import 'base/reset';
+@import 'base/typography';
+
+// 3. Layout (header y footer)
+@import 'layout/header';
+@import 'layout/footer';
+
+// 4. Components (elementos reutilizables)
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/forms';
+@import 'components/sidebar';
+
+// 5. Pages (estilos específicos de cada página)
+@import 'pages/home';
+@import 'pages/productos';
+@import 'pages/contacto';

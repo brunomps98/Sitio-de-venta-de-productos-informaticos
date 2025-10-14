@@ -1,0 +1,12 @@
+// Estilos bases para los textos de todos los sitios
+
+.products-main-title,
+.news-main-title {
+  font-family: $font-principal;
+  font-weight: bold;
+}
+
+h2, h3 {
+    font-family: $font-principal;
+    color: $color-texto-principal;
+}

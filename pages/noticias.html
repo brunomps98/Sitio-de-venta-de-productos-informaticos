@@ -4,24 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias</title>
-    <link rel="stylesheet" href="../styles/styles.css">
+    <title>BS HARDWARE</title>
+    <link rel="stylesheet" href="../css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <!--Encabezado de la pagina-->
-    <header class="custom-header">
-        <section class="custom-encabezado">
+    <header class="d-flex flex-column flex-md-row justify-content-between align-items-center p-3"
+        style="background-color:#FFF159;">
+
+        <div class="d-flex flex-column flex-md-row align-items-center text-center text-md-start gap-3">
             <img class="custom-imagen-encabezado" src="../assets/img/logo1.webp" alt="Logo de la tienda" width="200"
                 height="120">
-            <div class="custom-texto-encabezado">
-                <h1 class="custom-h1-encabezado">BS HARDWARE</h1>
-                <p class="custom-parrafo-encabezado">Más de 10 años en el rubro</p>
+            <div>
+                <h1 class="custom-h1-encabezado animate__animated animate__pulse">BS HARDWARE</h1>
+                <p class="custom-parrafo-encabezado mb-0">Más de 10 años en el rubro</p>
             </div>
-        </section>
+        </div>
 
-        <!--Navbar con Bootstrap-->
         <nav class="navbar navbar-expand-lg" style="background-color:#FFF159;">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -56,7 +60,7 @@
             <!--Filtros y titulo de página-->
             <section class="row mb-4">
                 <div class="col-md-6 text-center text-md-start">
-                    <h2 class="news-main-title">Noticias</h2>
+                    <h2 class="news-main-title animate__animated animate__fadeInDown">Noticias</h2>
                 </div>
                 <div class="col-md-6">
                     <form class="filter-form">
@@ -89,9 +93,11 @@
                                             jefa</a></h3>
                                     <p class="news-meta">Por Claudio Silvera | <time datetime="2025-01-25">25 de enero
                                             de 2025</time></p>
-                                    <p class="news-excerpt">Lisa Su, CEO de AMD, elegida CEO del Año por la revista
-                                        Time, habla sobre la posible fusión de Intel y AMD, que se ha rumoreado con
-                                        fuerza en las últimas semanas...</p>
+                                    <p class="news-excerpt">
+                                        Lisa Su, CEO de AMD, elegida CEO del Año por la revista Time, habla sobre la
+                                        posible fusión de Intel y AMD, que se ha rumoreado con fuerza en las últimas
+                                        semanas...
+                                    </p>
                                 </div>
                                 <div class="mt-auto news-card-footer">
                                     <a href="#" class="read-more">Ver más</a>
@@ -104,7 +110,7 @@
 
             <!--Noticias secundarias-->
             <section class="row mb-5">
-                <div class="col-md-6 col-lg-3 mb-4">
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in-up">
                     <article class="news-card h-100">
                         <img src="../assets/img/noticia-software.webp" alt="Ilustración sobre software en Argentina"
                             class="img-fluid news-img" loading="lazy">
@@ -120,7 +126,7 @@
                         </div>
                     </article>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-4">
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in-up">
                     <article class="news-card h-100">
                         <img src="../assets/img/noticia-ia.webp" alt="Ilustración sobre Ia" class="img-fluid news-img"
                             loading="lazy">
@@ -136,7 +142,7 @@
                         </div>
                     </article>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-4">
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in-up">
                     <article class="news-card h-100">
                         <img src="../assets/img/noticias-compañias.webp" alt="Ilustración sobre Microsoft"
                             class="img-fluid news-img" loading="lazy">
@@ -152,7 +158,7 @@
                         </div>
                     </article>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-4">
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in-up">
                     <article class="news-card h-100">
                         <img src="../assets/img/noticias-hardware2.webp" alt="Ilustración sobre hardware Intel"
                             class="img-fluid news-img" loading="lazy">
@@ -173,15 +179,16 @@
             <!--Texto informativo-->
             <section class="row mb-5">
                 <div class="col-12 text-center">
-                    <p class="lead">Aquí tienes toda la actualidad de Hardware que te interesa. Ponte al día de las
-                        últimas novedades sobre microprocesadores, tarjetas gráficas, equipos de sobremesa y portátiles.
+                    <p class="lead">
+                        Aquí tienes toda la actualidad de Hardware que te interesa. Ponte al día de las últimas
+                        novedades sobre microprocesadores, tarjetas gráficas, equipos de sobremesa y portátiles.
                     </p>
                 </div>
             </section>
 
             <!--Noticias inferiores-->
             <section class="row">
-                <div class="col-lg-6 mb-4">
+                 <div class="col-lg-6 mb-4" data-aos="zoom-in-up">
                     <article class="news-card h-100">
                         <img src="../assets/img/noticia-juegos.webp" alt="Ilustración sobre Hollow Knight Silksong"
                             class="img-fluid news-img" loading="lazy">
@@ -191,15 +198,17 @@
                             </h3>
                             <p class="news-meta">Por Bruno Silvera | <time datetime="2025-02-28">28 de febrero de
                                     2025</time></p>
-                            <p class="news-excerpt">Una nueva actualización del juego por Team Cherry en SteamDB despeja
-                                las dudas, de momento.</p>
+                            <p class="news-excerpt">
+                                Una nueva actualización del juego por Team Cherry en SteamDB despeja las dudas, de
+                                momento.
+                            </p>
                         </div>
                         <div class="news-card-footer">
                             <a href="#" class="read-more">Ver más</a>
                         </div>
                     </article>
                 </div>
-                <div class="col-lg-6 mb-4">
+                 <div class="col-lg-6 mb-4" data-aos="zoom-in-up">
                     <article class="news-card h-100">
                         <img src="../assets/img/noticia-juegos2.webp" alt="Ilustración sobre juegos gratis"
                             class="img-fluid news-img" loading="lazy">
@@ -209,8 +218,10 @@
                                     puedes descargar</a></h3>
                             <p class="news-meta">Por Bruno Silvera | <time datetime="2025-02-28">28 de febrero de
                                     2025</time></p>
-                            <p class="news-excerpt">Si quieres disfrutar de cuatro nuevos juegos gratis, ahora Steam te
-                                ofrece la oportunidad gracias a estas nuevas entregas.</p>
+                            <p class="news-excerpt">
+                                Si quieres disfrutar de cuatro nuevos juegos gratis, ahora Steam te ofrece la
+                                oportunidad gracias a estas nuevas entregas.
+                            </p>
                         </div>
                         <div class="news-card-footer">
                             <a href="#" class="read-more">Ver más</a>
@@ -267,6 +278,10 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

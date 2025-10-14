@@ -1,0 +1,46 @@
+/* Estilos para el banner de la página de inicio */
+.custom-banner-index img {
+  max-height: 450px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Estilos para las tarjetas de productos del index */
+.custom-productos-index {
+  padding: 20px;
+  background-color: #d1cfcf;
+  border: 2px solid #797979;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .flex-grow-1 {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background-color: white; 
+    margin-bottom: 15px;
+  }
+
+  .custom-nombre-producto {
+    font-family: $font-titulos; 
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .custom-precio-producto {
+    font-family: $font-precios; 
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1c08cf;
+    margin-top: 10px; 
+  }
+}
