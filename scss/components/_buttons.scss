@@ -9,10 +9,12 @@
   font-size: 1rem;
   font-weight: bold;
   text-align: center;
-  transition: background-color 0.2s ease-in-out;
+  transition: all 0.3s ease;
 
   &:hover {
-    background-color: darken($bg-color, 10%);
+    background-image: linear-gradient(45deg, $color-primario, $color-terciario);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -25,9 +27,9 @@
   width: 100%;
 }
 
-.custom-productos-index button {
+.btn-card {
   @include button-base($color-primario);
-  padding: 8px 16px; 
+  padding: 8px 16px;
 }
 
 .filter-form button, .order-form button, .search-form button {

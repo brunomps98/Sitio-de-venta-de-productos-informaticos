@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -66,10 +67,12 @@ h2, h3 {
   font-size: 1rem;
   font-weight: bold;
   text-align: center;
-  transition: background-color 0.2s ease-in-out;
+  transition: all 0.3s ease;
 }
 .buy-button:hover {
-  background-color: rgb(88.6693227092, 51.3784860558, 156.6215139442);
+  background-image: linear-gradient(45deg, #3483FA, #6f42c1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .submit-btn {
@@ -82,16 +85,18 @@ h2, h3 {
   font-size: 1rem;
   font-weight: bold;
   text-align: center;
-  transition: background-color 0.2s ease-in-out;
+  transition: all 0.3s ease;
 }
 .submit-btn:hover {
-  background-color: rgb(189.2151898734, 32.7848101266, 47.7721518987);
+  background-image: linear-gradient(45deg, #3483FA, #6f42c1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .submit-btn {
   width: 100%;
 }
 
-.custom-productos-index button {
+.btn-card {
   background-color: #3483FA;
   color: #fff;
   border: none;
@@ -101,12 +106,14 @@ h2, h3 {
   font-size: 1rem;
   font-weight: bold;
   text-align: center;
-  transition: background-color 0.2s ease-in-out;
+  transition: all 0.3s ease;
 }
-.custom-productos-index button:hover {
-  background-color: rgb(6.0336538462, 101.3653846154, 244.9663461538);
+.btn-card:hover {
+  background-image: linear-gradient(45deg, #3483FA, #6f42c1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.custom-productos-index button {
+.btn-card {
   padding: 8px 16px;
 }
 
@@ -121,10 +128,11 @@ h2, h3 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card-base:hover, .news-card:hover, .product-card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02) translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .product-card {
@@ -315,39 +323,51 @@ h2, h3 {
   aspect-ratio: 16/9;
 }
 
+/* Estilos para el banner de la página de inicio */
 .custom-banner-index img {
   max-height: 450px;
   width: 100%;
   object-fit: cover;
 }
 
+/* Estilos para las tarjetas de productos del index */
 .custom-productos-index {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   padding: 20px;
   background-color: #d1cfcf;
   border: 2px solid #797979;
+  text-align: center;
+  /* Estas 3 propiedades aseguran que la tarjeta ocupe toda la altura del contenedor grid de Bootstrap */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* ✨ AQUÍ LA SOLUCIÓN ✨ */
+  /* Hacemos que el div que envuelve el nombre y el precio sea flexible */
+}
+.custom-productos-index .flex-grow-1 {
+  flex-grow: 1; /* Permite que este div ocupe todo el espacio vertical disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Empuja el nombre arriba y el precio abajo */
 }
 .custom-productos-index img {
   width: 100%;
   height: 200px;
   object-fit: contain;
-  background-color: #fff;
-  margin-bottom: 10px;
+  background-color: white; /* Usando $color-blanco si está definido */
+  margin-bottom: 15px;
 }
 .custom-productos-index .custom-nombre-producto {
-  font-family: "Asimovian", sans-serif;
-  min-height: 48px;
+  font-family: "Asimovian", sans-serif; /* Asumiendo que tienes esta variable */
   font-weight: bold;
+  font-size: 1.2rem;
+  /* min-height: 58px; // ❌ Nos aseguramos de que esta línea NO esté */
 }
 .custom-productos-index .custom-precio-producto {
-  font-family: "PT Serif", serif;
+  font-family: "PT Serif", serif; /* Asumiendo que tienes esta variable */
   font-size: 1.1rem;
   font-weight: bold;
   color: #1c08cf;
-  margin: 10px 0;
+  margin-top: 10px; /* Margen para separar del nombre en caso de que estén juntos */
 }
 
 .product-grid {
@@ -396,6 +416,7 @@ h2, h3 {
   font-size: 1.2rem;
   font-weight: bold;
   justify-self: center;
+  color: #1c08cf;
 }
 
 .buy-button {

@@ -6,10 +6,12 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02) translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+
   }
 }
 
@@ -31,7 +33,7 @@
     justify-content: center;
   }
 
-  // Contenedor del texto (flexible)
+  // Contenedor del texto 
   &__info {
     flex-grow: 1;
     display: flex;
@@ -113,3 +115,5 @@
   }
 
 }
+
+
